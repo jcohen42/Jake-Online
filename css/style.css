@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+:root{
+    --border-small: 24px;
+    --border-medium: 32px;
+    --border-large: 48px;
+    --page-width: 1216px;
+    --margin-size: 8px;
+}
+html{
+    cursor: url('../assets/cursors/cursor_standard.png'), auto;
+}
+@font-face{
+    font-family: planet-cosmos;
+    src: url('../assets/fonts/PLANK.TTF');
+}
+body{
+    background-image: var(--background-image);
+    background-position: 100%;
+    background-color: var(--background-color);
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+.blended_grid{
+    display: block;
+    width: var(--page-width);
+    overflow: auto;
+    margin: 0 auto;
+}
+.pageHeader{
+    float: left;
+    clear: none;
+    height: 150px;
+    width: var(--page-width);
+    line-height: 150px;
+    text-align: center;
+    font-size: 42px;
+    font-family: planet-cosmos;
+    color: var(--text-color);
+}
+.navbar{
+    height: 64px;
+    width: var(--page-width);
+    float: left;
+    line-height: 64px;
+    font-size: 28px;
+    font-family: planet-cosmos;
+    text-align: center;
+}
+nav ul {
+    background-color: var(--navbar-color);
+    border-radius: var(--border-large);
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+nav ul li a{
+    color: var(--content-color);
+    text-align: center;
+    text-decoration: solid;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+/* Change the color of links on hover */
+nav ul li a:hover {
+    background-color: var(--title-color);
+    border-radius: var(--border-medium);
+}
+.sidebar{
+    float: left;
+    clear: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --sidebar-width: 200px;
+}
+.sidebar > div, iframe{
+    margin-top: var(--margin-size);
+}
+.sidebarTitle{
+    background-color: var(--title-color);
+    border-radius: var(--border-small);
+    float : none;
+    height : fit-content;
+    width : var(--sidebar-width);
+    text-align: center;
+    padding: 16px;
+}
+.sidebarTitle p {
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sidebarContent{
+    background-color: var(--sidebar-color);
+    border-radius: var(--border-small);
+    float: none;
+    height: fit-content;
+    width: var(--sidebar-width);
+    text-align: justify;
+    padding: 16px;
+}
+.sidebarContainer{
+    background-color: var(--sidebar-color);
+    border-radius: var(--border-small);
+    float: none;
+    height: var(--sidebar-width);
+    width: var(--sidebar-width);
+    padding: 16px;
+    overflow-y: auto;
+}
+.sidebar img{
+    background-color: var(--sidebar-color);
+    border-radius: var(--border-small);
+    float: none;
+    height: auto;
+    width: calc(var(--sidebar-width) + 32px);
+    max-width: 100%;
+}
+.sidebarContent img{
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.sidebarContainer img{
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.tableItem {
+    display: flex;
+    padding: 2px;
+    height: 32px;
+}
+.tableItem p:first-of-type{
+    background-color: var(--navbar-color);
+    border-radius: 8px;
+    color: var(--content-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+.tableItem p:last-of-type{
+    padding-left: 4px;
+    width: 55%;
+    line-height: 32px;
+}
+.tableItem2Row{
+    line-height: 16px !important;
+}
+.page{
+    float: left;
+    clear: none;
+    box-sizing: border-box;
+    width: var(--content-width);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --content-width: 752px;
+}
+.pageWide{
+    float: left;
+    clear: none;
+    box-sizing: border-box;
+    width: var(--content-width);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --content-width: 984px;
+}
+.page > div{
+    margin-top: var(--margin-size);
+    margin-left: var(--margin-size);
+    margin-right: var(--margin-size);
+}
+.pageWide > div{
+    margin-top: var(--margin-size);
+    margin-left: var(--margin-size);
+    margin-right: 0;
+}
+.pageTitle{
+    background-color: var(--title-color);
+    float: none;
+    height: fit-content;
+    text-align: center;
+    border-radius: var(--border-small);
+    padding: 16px;
+}
+.pageTitle p{
+    color: var(--content-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+.pageTitleDual{
+    background-color: var(--title-color);
+    float: none;
+    height: fit-content;
+    border-radius: var(--border-small);
+    padding: 16px;
+}
+.pageTitleDual p{
+    color: var(--content-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+.pageTitleDual p:first-of-type{
+    text-align: left;
+    float: left;
+    margin-left: calc(2.5 * var(--margin-size));
+}
+.pageTitleDual p:last-of-type{
+    text-align: right;
+    margin-right: calc(2.5 * var(--margin-size));
+}
+.pageContent{
+    background-color: var(--content-color);
+    float: none;
+    height: fit-content;
+    border-radius: var(--border-medium);
+    padding: 32px;
+    text-indent: 5%;
+    text-align: justify;
+    line-height: 24px;
+}
+.page img{
+    background-color: var(--content-color);
+    float: none;
+    width: calc(var(--content-width) - (2 * var(--margin-size)));
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-medium);
+}
+.pageWide img{
+    background-color: var(--content-color);
+    float: none;
+    width: calc(var(--content-width) - var(--margin-size));
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-medium);
+}
+.pageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    --image-size: 240px;
+}
+.pageContent li {
+    margin-left: calc(4 * var(--margin-size));
+    text-indent: 0;
+}
+.pageGallery img {
+    width: var(--image-size);
+    max-width: 100%;
+    height: var(--image-size);
+    object-fit: cover;
+    border-radius: var(--border-small);
+    background-color: var(--content-color);
+}
+.pageGallery > div {
+    width: var(--image-size); /* this should match the image height */
+    height: calc(var(--image-size) + 48px); /* this should match the image width */
+    margin-bottom: var(--margin-size);
+}
+.pageGallery p{
+    text-align: center;
+    color: var(--gallery-text-color);
+}
+.pageGallery img:hover {
+    transform:scale(2.5); /* this scales up the image when you hover over it */
+    object-fit:contain; /* this keeps the aspect ratio of the original images*/
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+}
+.earthbound img {
+    border-radius: 0;
+}

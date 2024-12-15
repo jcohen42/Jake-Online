@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+:root{
+    --border-small: 24px;
+    --border-medium: 32px;
+    --border-large: 48px;
+    --page-width: 1216px;
+}
+html{
+    cursor: url('cursor_standard.png'), auto;
+}
+@font-face{
+    font-family: planet-cosmos;
+    src: url('PLANK.TTF');
+}
+body{
+    background-image: url('Blue-Dalmation.jpg');
+    background-position: 100%;
+    background-color: #fffffb;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+.title{
+    /* float: left; */
+    height: 300px;
+    /* width: var(--page-width); */
+    line-height: 300px;
+    text-align: center;
+    font-size: 42px;
+    font-family: planet-cosmos;
+    color: #202020;
+    /* margin: auto; */
+}
+.title h1{
+    text-align: center;
+}
+.welcome{
+    height: auto;
+    width: 40%;
+    /* float: left; */
+    line-height: 40px;
+    color: #202020;
+    font-size: 24px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    background-color: #e7e7e7;
+    border-radius: var(--border-medium);
+    padding: 32px;
+    margin: auto;
+}
+.enter{
+    background-color: #2d63d8;
+    height: auto;
+    width: 40%;
+    line-height: 48px;
+    font-size: 64px;
+    font-family: planet-cosmos;
+    text-align: center;
+    border-radius: var(--border-medium);
+    padding: 32px;
+    margin: 32px auto;
+}
+* a{
+    color: #fffffb;
+    text-decoration: solid;
+}

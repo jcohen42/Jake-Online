@@ -1,0 +1,10 @@
+:root{
+    --background-color: #fffffb;
+    --background-image: url('../assets/Sage-Foam.jpg');
+    --content-color: #e7e7e7;
+    --sidebar-color: #d7d7d7;
+    --text-color: #202020;
+    --gallery-text-color: #202020;
+    --navbar-color: #3cb122;
+    --title-color: #67c24f;
+}
