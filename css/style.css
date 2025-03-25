@@ -30,6 +30,9 @@ body{
     overflow: auto;
     margin: 0 auto;
 }
+a:hover {
+    cursor: url('../assets/cursors/cursor_phone.png'), auto;
+}
 .pageHeader{
     float: left;
     clear: none;
@@ -73,6 +76,7 @@ nav ul li a{
 nav ul li a:hover {
     background-color: var(--title-color);
     border-radius: var(--border-medium);
+    cursor: url('../assets/cursors/cursor_door.png'), auto;
 }
 .sidebar{
     float: left;
@@ -276,6 +280,7 @@ nav ul li a:hover {
     border-radius: 0px;
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
+    cursor: url('../assets/cursors/cursor_interact.png'), auto;
 }
 .earthbound img {
     border-radius: 0;
