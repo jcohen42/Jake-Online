@@ -299,3 +299,17 @@ nav ul li a:hover {
     height: 127px;
     overflow: hidden;
 }
+#statuscafe {
+    background-color: var(--sidebar-color);
+    border-radius: var(--border-small);
+    float: none;
+    height: fit-content;
+    width: var(--sidebar-width);
+    padding: 16px;
+}
+#statuscafe-username {
+    font-weight: bold;
+}
+#statuscafe-content {
+    margin: 0;
+}
