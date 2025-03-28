@@ -200,6 +200,43 @@ nav ul li a:hover {
     font-weight: bold;
     font-size: 20px;
 }
+.remarked h1,section,img{
+    margin-top: var(--margin-size);
+}
+.remarked h1{
+    background-color: var(--title-color);
+    float: none;
+    height: fit-content;
+    text-align: center;
+    border-radius: var(--border-small);
+    padding: 16px;
+    color: var(--content-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+.remarked section{
+    background-color: var(--content-color);
+    float: none;
+    height: fit-content;
+    border-radius: var(--border-medium);
+    padding: 32px;
+    text-indent: 5%;
+    text-align: justify;
+    line-height: 24px;
+}
+.remarked li{
+    margin-left: calc(4 * var(--margin-size));
+    margin-right: calc(2 * var(--margin-size));
+    text-indent: 0;
+}
+.remarked img{
+    background-color: var(--content-color);
+    float: none;
+    width: calc(var(--content-width) - var(--margin-size));
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-medium);
+}
 .pageTitleDual{
     background-color: var(--title-color);
     float: none;
@@ -281,6 +318,9 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     cursor: url('../assets/cursors/cursor_interact.png'), auto;
+}
+.spacer {
+    margin-bottom: 100px;
 }
 .earthbound img {
     border-radius: 0;

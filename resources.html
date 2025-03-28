@@ -5,6 +5,14 @@
   <link rel="stylesheet" type="text/css" href="css/resources.css">
   <title>jakeonline</title>
   <meta name="jakeonline" content="Jake's on the line">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js"></script>
+  <script type="text/javascript" src="resources.md"></script>
+  <script>
+    fetch('resources.md')
+      .then(res => res.text())
+      .then(res => document.getElementById('resources').innerHTML = DOMPurify.sanitize(marked.parse(res)))
+  </script>
 </head>
 <body>
   <div class="blended_grid">
@@ -32,78 +40,8 @@
       </div>
     </div>
     <div class="pageWide">
-      <div class="pageTitle">
-        <p>Firefox Extensions</p>
-      </div>
-      <div class="pageContent">
-        <p>These are all of the Firefox extensions I use. Ads, paywalls, and user tracking suck, so most of these extensions are focused on limiting those. But, there are some other helpful ones thrown in there.</p>
-        <ul>
-            <li><a href="https://betterttv.com/" target="_blank">BetterTTV</a>: Adds more emotes and features to Twitch and YouTube Live</li>
-            <li><a href="https://gitlab.com/magnolia1234/bypass-paywalls-firefox-clean" target="_blank">Bypass Paywalls Clean</a>: Gets you past the paywall blockers from news sites</li>
-            <li><a href="https://docs.clearurls.xyz/" target="_blank">ClearURLs</a>: Removes unneccesary tracking elements from the URL</li>
-            <li><a href="https://darkreader.org/">Dark Reader</a>: My favorite extension by far. Makes all webpages dark mode! They even have an iOS Safari extension, but it costs money</li>
-            <li><a href="https://www.ecosia.org/" target="_blank">Ecosia</a>: My search engine of choice, since it doesn't use 3rd party tracking. Allegedly plants trees for your searches</li>
-            <li><a href="https://www.eff.org/https-everywhere" target="_blank">HTTPS Everywhere</a>: Automatically uses HTTPS security on websites</li>
-            <li><a href="https://getindie.wiki/" target="_blank">Indie Wiki Buddy</a>: Automatically redirects Fandom wikis to better independent wikis</li>
-            <li><a href="https://keepa.com/" target="_blank">Keepa</a>: Adds a price history graph on Amazon detail pages</li>
-            <li><a href="https://github.com/dessant/search-by-image" target="_blank">Search by Image</a>: A tool to search any image across multiple search engines at once</li>
-            <li><a href="https://github.com/drive4ik/simple-tab-groups" target="_blank">Simple Tab Groups</a>: One of my favorites for tab management. Allows you to create groups of tabs, assign icons/colors to them, and easily switch between them</li>
-            <li><a href="https://sponsor.ajay.app/" target="_blank">SponsorBlock for YouTube</a>: Adds the ability to not just skip in-video ads (e.g. this video is sponsored by xyzVPN), but also intros, outros, and other filler content</li>
-            <li><a href="https://github.com/gorhill/uBlock#ublock-origin" target="_blank">uBlock Origin</a>: The best ad & tracker blocker out there</li>
-        </ul>
-      </div>
-      <div class="pageTitle">
-        <p>General Links</p>
-      </div>
-      <div class="pageContent">
-        <p>Some random links from around the web that I've stumbled upon that aren't related to any other categories on here, check them out! Most of them are free, or have a free option.</p>
-        <ul>
-            <li><a href="https://unsplash.com/" target="_blank">Unsplash</a>: Free images/photos</li>
-            <li><a href="https://daisyui.com/" target="_blank">DaisyUI</a>: Tailwind CSS components</li>
-            <li><a href="https://blahaj.land/landing/" target="_blank">Blahaj Land</a>: Cool static website and file hosting :3</li>
-            <li><a href="https://cobalt.tools/" target="_blank">Cobalt</a>: On-device YouTube downloader</li>
-            <li><a href="https://www.nerdfonts.com/" target="_blank">Nerd Fonts</a>: Powerline symbols for terminal</li>
-        </ul>
-      </div>
-      <div class="pageTitle">
-        <p>Website-Making Tools</p>
-      </div>
-      <div class="pageContent">
-        <p>Here are some helpful links I've come across over the course of making this website. This is the first website I've made, and these tools made it a lot easier. Hopefully they can help you too!</p>
-        <ul>
-            <li><a href="https://goblin-heart.net/sadgrl/learn/sections/snippets" target="_blank">sadgrl code snippets</a></li>
-            <li><a href="https://webmastering.neocities.org/layouts" target="_blank">HTML Templates</a></li>
-            <li><a href="https://emojicombos.com/" target="_blank">Emojis & ASCII Art</a></li>
-            <li><a href="https://jeansgurl98.com/info" target="_blank">Jeansgurl's Links</a></li>
-            <li><a href="https://www.earthboundtext.com/" target="_blank">Earthbound Text Generator</a>, <a href="https://www.spriters-resource.com/snes/earthbound/" target="_blank">sprites</a>, and <a href="https://www.gjtorikian.com/Earthbound-Battle-Backgrounds-JS/" target="_blank">battle backgrounds</a></li>
-            <li><a href="https://status.cafe/" target="_blank">status.cafe</a></li>
-            <li>Places to get fonts, like <a href="https://fontesk.com/voxel-font/" target="_blank">Fontesk</a>, <a href="https://www.dafont.com/" target="_blank">Dafont</a>, and <a href="https://www.fontbrief.com/fontbrief" target="_blank">Fontbrief</a></li>
-        </ul><br/>
-        <p>Also, here are a couple sites I used for inspiration:</p>
-        <ul>
-          <li><a href="https://jeith.neocities.org/about" target="_blank">jeith</a></li>
-          <li><a href="https://ita.toys/" target="_blank">ita toys</a></li>
-          <li><a href="https://jeansgurl98.neocities.org/info" target="_blank">jeansgurl98</a></li>
-          <li><a href="https://cashmerecrypt.art/links/" target="_blank">Cashmere Crypt</a></li>
-        </ul>
-      </div>
-      <div class="pageTitle">
-        <p>3DS Homebrew</p>
-      </div>
-      <div class="pageContent">
-        <p>I recently homebrewed my 3DS, and collected the websites I used to download software & games.</p>
-        <ul>
-            <li><a href="https://3ds.hacks.guide/get-started.html" target="_blank">3DS Hacks Guide</a>: The definitive guide for installing Homebrew on your 3DS. Includes instructions for every model and software version of 3Ds.</li>
-            <li><a href="https://wiki.ds-homebrew.com/twilightmenu/" target="_blank">Twilight Menu++</a>: This is an app that allows you to play ROM files, like GBA or SNES</li>
-            <li><a href="https://universal-team.net/projects/universal-updater" target="_blank">Universal Updater</a>: An easy way to install Homebrew apps</li>
-            <li><a href="https://www.reddit.com/r/3dsqrcodes/" target="_blank">3DS QR Codes Subreddit</a>: Contains lots of software and games that you can install through the FBI app's QR code scanner</li>
-            <li>hShop: Kind of like the eShop :)</li>
-        </ul>
-      </div>
-      <div class="pageTitle">
-        <p>SoulSeek Guide (P2P File Sharing Application)</p>
-      </div>
-      <div><img src="assets/resources/soulseek_guide.webp"></div>
+      <div id="resources" class="remarked"></div>
+      <div class="spacer"></div>
     </div>
   </div>
 </body>
