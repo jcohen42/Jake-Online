@@ -12,24 +12,20 @@ const getTrack = async () => {
 
     if(!isPlaying) {
         // Trigger if a song isn't playing
-        return;
     } else {
         // Trigger if a song is playing
     }
 
-    // Values:
-    // COVER IMAGE: json.track.image[1]['#text']
-    // TITLE: json.track.name
-    // ARTIST: json.track.artist['#text']
-
     document.getElementById("listening").innerHTML = `
-    <img src="${json.track.image[1]['#text']}">
+    <a href="${json.track.url}" target="_blank">
+        <img src="${json.track.image[2]['#text']}">
+    </a>
     <div id="trackInfo">
-    <h3 id="trackName">${json.track.name}</h3>
-    <p id="artistName">${json.track.artist['#text']}</p>
+        <h3 id="trackName">${json.track.name}</h3>
+        <p id="artistName">${json.track.artist['#text']}</p>
     </div>
     `
 };
 
 getTrack();
-setInterval(() => { getTrack(); }, 10000)
+setInterval(() => { getTrack(); }, 60000)
