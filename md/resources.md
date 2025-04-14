@@ -27,6 +27,7 @@ Some random links from around the web that I've stumbled upon that aren't relate
 * [DaisyUI](https://daisyui.com/): Tailwind CSS components
 * [Blahaj Land](https://blahaj.land/landing/): Cool static website and file hosting :3
 * [Cobalt](https://cobalt.tools/): On-device YouTube downloader
+* [VERT](https://vert.sh/): On-device file converter
 * [Nerd Fonts](https://www.nerdfonts.com/): Powerline symbols for terminal
 
 </section>

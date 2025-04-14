@@ -255,6 +255,14 @@ nav ul li a:hover {
     text-align: justify;
     line-height: 24px;
 }
+.wiiRing{
+    border: none;
+    width: 100%;
+    height: 225px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
 .page img{
     background-color: var(--content-color);
     float: none;
