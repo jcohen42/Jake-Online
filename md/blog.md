@@ -1,3 +1,26 @@
+<a id="4-23-25"></a>
+
+# Software Spotlight: Mealie - April 23rd, 2025
+
+<section>
+
+A couple blog posts ago I talked about Bar Assistant, which has allowed me to create & manage cocktail recipes for my home bar. I've been using it more since the blog post and still love it a lot! No complaints from me. In that post, I mentioned [Mealie](https://mealie.io/), which is a similar selfhost-able service which lets you create & manage recipes (like, for food). Mealie is one of the first containers I spun up on my home server, about a year and a half ago. I can't remember exactly where, but I think I initially found out about it on one of those "what's in my home server" videos. I started with just a few recipes that my friends and family sent me, and immediately saw the benefits since I wasn't losing links from recipes that were sent to me a long time ago. The UI is also pretty nice, it takes me back to the Matthias Duarte era of peak material design.
+
+If you have a recipe you'd like to add, you can paste in the link and the parser should automatically pick up the image, description, ingredients, and steps. I say should, sometimes I have to go back and fix things that were parsed incorrectly. 50% of the time, it works every time. I should mention, the parser can even look past paywalls on websites you may or may not have paid access to ;) You can also add recipes manually for non-standard websites or hand-written recipes. The home page is pretty basic, just listing out the recipes and your ratings. The recipe view is convenient. Not only does it keep the screen on my tablet awake, you can check off steps and ingredients as you use them! Then I don't get confused trying to remember which steps I already did :P
+
+If you have a Raspberry Pi or other server sitting around, and are interested on stepp up your home cooking game, I'd strongly recommend Mealie! My only complaint is that the login session time is way too short, I feel like I have to log back in every time I access the site. If you'd like to check out a running instance to get the feel of it, you can visit my website [here](https://mealie.jakeonline.co/g/home).
+
+</section>
+<div class="pageGallery">
+  <div>
+    <img src="assets/blog/mealie-homescreen.png" >
+    <p>Mealie home screen</p>
+  </div>
+  <div>
+    <img src="assets/blog/mealie-recipe.png" >
+    <p>Recipe view</p>
+  </div>
+</div>
 <a id="3-29-25"></a>
 
 # Markdown My Beloved - March 29th, 2025
