@@ -17,6 +17,22 @@ html{
     font-family: planet-cosmos;
     src: url('../assets/fonts/PLANK.TTF');
 }
+@font-face{
+    font-family: ibm;
+    src: url('../assets/fonts/IBM-Plex-Sans-Condensed/IBMPlexSansCondensed-Regular.ttf');
+}
+@font-face{
+    font-family: ibm-bold;
+    src: url('../assets/fonts/IBM-Plex-Sans-Condensed/IBMPlexSansCondensed-Bold.ttf');
+}
+@font-face{
+    font-family: ibm-italic;
+    src: url('../assets/fonts/IBM-Plex-Sans-Condensed/IBMPlexSansCondensed-Italic.ttf');
+}
+@font-face{
+    font-family: ibm-title;
+    src: url('../assets/fonts/IBMPlexSans-Bold.ttf');
+}
 body{
     background-image: var(--background-image);
     background-position: 100%;
@@ -81,7 +97,7 @@ nav ul li a:hover {
 .sidebar{
     float: left;
     clear: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: ibm;
     --sidebar-width: 200px;
 }
 .sidebar > div, iframe{
@@ -100,6 +116,7 @@ nav ul li a:hover {
     color: #eeeeee;
     font-weight: bold;
     font-size: 20px;
+    font-family: ibm-title;
 }
 .sidebarContent{
     background-color: var(--sidebar-color);
@@ -152,6 +169,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     width: 45%;
+    font-family: ibm-title;
 }
 .tableItem p:last-of-type{
     padding-left: 4px;
@@ -166,7 +184,7 @@ nav ul li a:hover {
     clear: none;
     box-sizing: border-box;
     width: var(--content-width);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: ibm;
     --content-width: 752px;
 }
 .pageWide{
@@ -174,7 +192,7 @@ nav ul li a:hover {
     clear: none;
     box-sizing: border-box;
     width: var(--content-width);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: ibm;
     --content-width: 984px;
 }
 .page > div{
@@ -199,6 +217,7 @@ nav ul li a:hover {
     color: var(--content-color);
     font-weight: bold;
     font-size: 20px;
+    font-family: ibm-title;
 }
 .remarked h1,section,img{
     margin-top: var(--margin-size);
@@ -213,6 +232,7 @@ nav ul li a:hover {
     color: var(--content-color);
     font-weight: bold;
     font-size: 20px;
+    font-family: ibm-title;
 }
 .remarked section{
     background-color: var(--content-color);
@@ -301,6 +321,9 @@ nav ul li a:hover {
     width: var(--image-size); /* this should match the image height */
     height: calc(var(--image-size) + 48px); /* this should match the image width */
     margin-bottom: var(--margin-size);
+}
+.pageGallery p b {
+    font-family: ibm-title;
 }
 .pageGallery p{
     text-align: center;
